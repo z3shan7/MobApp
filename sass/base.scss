@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    border: 0 solid transparent;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+}
+
+// remove all animations, transitions and smooth scroll for people that prefer not to see them
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+// reset list style
+ol,
+ul {
+    list-style: none;
+
+}
+
+// reset anchor style
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+// button {
+//     padding: 0;
+//     margin: 0;
+// }
+
+// inherit fonts for inputs and buttons
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+// prevent iOS font size change
+html {
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5% // 16px;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #868e96;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #868e96;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+    --section-heading: #633991;
+    --section-name: #998a98;
+    --paragraph: #959094;
+
+    // font family
+
+    --ff-rubik: 'Rubik', sans-serif;
+}
