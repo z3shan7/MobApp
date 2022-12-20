@@ -44,6 +44,8 @@ picture {
 ol,
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -55,10 +57,10 @@ a {
     -webkit-tap-highlight-color: transparent;
 }
 
-// button {
-//     padding: 0;
-//     margin: 0;
-// }
+button {
+    padding: 0;
+    margin: 0;
+}
 
 // inherit fonts for inputs and buttons
 input,
@@ -73,7 +75,7 @@ select {
 // prevent iOS font size change
 html {
     -webkit-text-size-adjust: 100%;
-    font-size: 62.5% // 16px;
+    // font-size: 62.5% // 16px;
 }
 
 :root {
@@ -99,9 +101,11 @@ html {
     --light: #f8f9fa;
     --dark: #343a40;
 
+
     --section-heading: #633991;
     --section-name: #998a98;
     --paragraph: #959094;
+    --light-bg: #faf6fb;
 
     // font family
 

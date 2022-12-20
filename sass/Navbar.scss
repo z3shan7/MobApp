@@ -1,0 +1,151 @@
+.navbar {
+    padding: 1.8rem 0;
+    color: #fff;
+    gap: 30px;
+    // background-attachment: fixed;
+
+    &__content {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__logo-box {
+        flex-grow: 1;
+
+    }
+
+    &__text {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    &__span {
+        font-weight: 500;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        height: auto;
+    }
+
+    &__links {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, .5);
+        padding: .4rem 0;
+        // opacity: .8;
+    }
+
+    &__links:hover {
+        color: rgba(255, 255, 255, .8);
+
+
+    }
+
+    &__active {
+        border-bottom: 2px solid #fff;
+        color: #fff;
+    }
+
+    &__btn {
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 0.475rem 1.55rem;
+        transition: all 0.3s ease;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }
+
+    &__btn:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: rgba(250, 0, 118, 0.8);
+    }
+
+    &__nav-toggler {
+        display: none;
+    }
+
+
+}
+
+.fixedNav.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
+    // width: 100%;
+    // margin: auto;
+    border: 0;
+    transition: all 400ms ease;
+    padding: .7rem 0;
+    // padding: 0rem 0rem;
+    z-index: 1000;
+    // box-shadow: 0px 5px 23px 0px rgb(0 0 0 / 10%);
+}
+
+.fixedNav.navbar .navbar__content {
+    width: 1100px;
+    margin: auto;
+
+}
+
+@media screen and (max-width:1050px) {
+    .navbar {
+        position: relative;
+
+
+
+
+        &__list {
+            // display: flex;
+            flex-direction: column;
+            // align-items: center;
+            position: fixed;
+            top: 208px;
+            left: 166px;
+            transform: translate(-50%, -50%);
+            gap: 10px;
+            // height: 0;
+            // display: none;
+
+        }
+
+        &__links {
+
+            color: rgba(255, 255, 255, .5);
+            padding: .4rem 0;
+            display: block;
+            width: 100%;
+            // text-decoration: none;
+        }
+
+        &__links:hover {
+            background-color: skyblue;
+        }
+
+
+
+
+
+
+
+
+        &__nav-toggler {
+            display: block;
+            font-size: 28px;
+            border: 1px solid rgba(255, 255, 255, .5);
+            padding: 0 .8rem;
+        }
+
+
+    }
+
+
+}

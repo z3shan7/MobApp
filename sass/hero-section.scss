@@ -1,5 +1,28 @@
 .hero-section {
     background-image: linear-gradient(135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+
+    &__content {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    &__header {
+        font-size: 60px;
+        color: #fff;
+        font-weight: 300;
+    }
+
+    &__text {
+        font-size: 23px;
+        font-weight: 300;
+        width: 800px;
+        margin: auto;
+        color: #FFb8f6;
+    }
+
+
+
 
 }
