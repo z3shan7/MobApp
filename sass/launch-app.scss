@@ -1,0 +1,38 @@
+.launch-app {
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    &__img {
+        flex-basis: 50%;
+
+    }
+
+    &__text {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .launch-app {
+
+        &__content {
+            flex-direction: column;
+        }
+
+        &__img {
+            flex-basis: 50%;
+
+        }
+
+        &__text {
+            flex-basis: 50%;
+        }
+    }
+
+
+}

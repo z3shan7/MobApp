@@ -50,7 +50,7 @@ body {
     font-size: 45px;
     font-weight: 300;
     color: var(--section-heading);
-    text-align: left;
+    // text-align: left;
     font-family: inherit;
 }
 
@@ -58,7 +58,7 @@ body {
     font-size: 28px;
     font-weight: 300;
     color: var(--section-heading);
-    text-align: left;
+    // text-align: left;
     font-family: inherit;
 }
 
@@ -66,13 +66,13 @@ body {
     font-size: 20px;
     font-weight: 500;
     color: var(--section-heading);
-    text-align: left;
+    // text-align: left;
     font-family: inherit;
 }
 
 .paragraph-1 {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--paragraph);
     text-align: left;
 }
@@ -91,11 +91,17 @@ body {
 
 .btn-primary {
     background-image: linear-gradient(122deg, #e54595 0%, #fd378e 100%);
-    // box-shadow: 0px 9px 32px 0px rgba(0 0 0 / 20%);
+    box-shadow: 0px 9px 32px 0px rgba($color: #000000, $alpha: .2);
     font-weight: 500;
     padding: 0.6rem 2rem;
     border: 0;
     border-radius: 3px;
+    color: #fff;
+    margin-top: 1.5rem;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
 }
 
 .bt-lg {
@@ -138,7 +144,12 @@ body {
         max-width: 600px;
         padding-left: 20px;
         padding-right: 20px;
+    }
 
+    .heading-1 {
+        font-size: 30px;
 
     }
+
+
 }
