@@ -17,12 +17,35 @@
     &__text {
         font-size: 23px;
         font-weight: 300;
-        width: 800px;
+        max-width: 800px;
         margin: auto;
         color: #FFb8f6;
     }
 
 
+
+
+}
+
+@media screen and (max-width:840px) {
+
+    .hero-section {
+
+        &__header {
+            font-size: 40px;
+
+        }
+
+        &__text {
+            font-size: 17px;
+            font-weight: 300;
+            // width: 800px;
+            margin: auto;
+            color: #FFb8f6;
+        }
+
+
+    }
 
 
 }

@@ -301,9 +301,18 @@ html {
   .hero-section__text {
     font-size: 23px;
     font-weight: 300;
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     color: #FFb8f6; }
+
+@media screen and (max-width: 840px) {
+  .hero-section__header {
+    font-size: 40px; }
+  .hero-section__text {
+    font-size: 17px;
+    font-weight: 300;
+    margin: auto;
+    color: #FFb8f6; } }
 
 .highlights {
   background-color: var(--light-bg); }
