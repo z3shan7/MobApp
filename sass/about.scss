@@ -22,6 +22,14 @@
         // align-items: center;
     }
 
+    &__col:hover &__circle-icon {
+        background-color: #f5378e;
+        color: #fff;
+        cursor: pointer;
+
+
+    }
+
     &__col:not(:last-child) {
         border-bottom: 1px solid #f8e3f0;
     }

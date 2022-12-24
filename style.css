@@ -430,6 +430,10 @@ html {
     align-items: flex-start;
     gap: 20px;
     padding-bottom: 30px; }
+  .about__col:hover .about__circle-icon {
+    background-color: #f5378e;
+    color: #fff;
+    cursor: pointer; }
   .about__col:not(:last-child) {
     border-bottom: 1px solid #f8e3f0; }
   .about__circle-icon {
