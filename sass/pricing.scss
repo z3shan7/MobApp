@@ -1,0 +1,28 @@
+.pricing {
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+    }
+
+    &__card {
+        background-color: #fff;
+        border: 1px solid #f1eef1;
+    }
+
+    &__header {
+        padding-bottom: 1.5rem;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: var(--pink-lite);
+        text-transform: uppercase;
+    }
+
+    &__span {
+        font-size: 25px;
+    }
+}

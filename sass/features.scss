@@ -42,6 +42,7 @@
     &__tab-content {
         display: flex;
         gap: 10px;
+        transition: all ease-in 300ms;
     }
 
     &__tab-content:nth-child(even) {
@@ -66,7 +67,8 @@
 
     &__sub-heading {
         font-size: 20px;
-        color: #E38cB7;
+        color: var(--pink-lite);
+        // color: #E38cB7;
         font-weight: 300;
         padding-bottom: 2rem;
     }
@@ -91,6 +93,10 @@
         &__tab-content {
             flex-direction: column;
 
+        }
+
+        &__tab-content:nth-child(even) {
+            flex-direction: column-reverse;
         }
 
         &__sub-heading {
