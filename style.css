@@ -446,6 +446,14 @@ html {
     line-height: 1.8;
     padding-bottom: 1rem; }
 
+@media screen and (max-width: 750px) {
+  .features__container {
+    padding: 1.5rem; }
+  .features__tabs {
+    grid-template-columns: repeat(2, 1fr); }
+  .features__tab-content {
+    flex-direction: column; } }
+
 .launch-app__content {
   display: flex;
   align-items: center;

@@ -79,3 +79,28 @@
         // background-color: #fff;
     }
 }
+
+@media screen and (max-width:750px) {
+    .features {
+
+
+
+        &__container {
+
+            padding: 1.5rem;
+        }
+
+        &__tabs {
+            // display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            // gap: 2px;
+        }
+
+        &__tab-content {
+            flex-direction: column;
+
+        }
+    }
+
+
+}
