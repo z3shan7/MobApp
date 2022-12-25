@@ -399,7 +399,7 @@ html {
 
 .features {
   background-color: var(--light-bg); }
-  .features__container {
+  .features__components {
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
     background-color: #FFF;
@@ -447,12 +447,18 @@ html {
     padding-bottom: 1rem; }
 
 @media screen and (max-width: 750px) {
-  .features__container {
+  .features__components {
     padding: 1.5rem; }
   .features__tabs {
     grid-template-columns: repeat(2, 1fr); }
   .features__tab-content {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .features__sub-heading {
+    font-size: 17px; } }
+
+@media screen and (max-width: 500px) {
+  .features__tabs {
+    grid-template-columns: 1fr; } }
 
 .launch-app__content {
   display: flex;
