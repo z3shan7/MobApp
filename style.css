@@ -579,6 +579,9 @@ html {
 .pricing__list li {
   font-weight: 400; }
 
+.pricing__list del {
+  color: #d9d3d8; }
+
 .pricing__btn {
   width: 100%;
   border: 0;
