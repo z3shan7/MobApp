@@ -550,6 +550,11 @@ html {
   width: 100%;
   height: 100%; }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--paragraph);
+  font-size: 10px; }
+
 .swiper-slide {
   text-align: center;
   background: #fff;
@@ -567,6 +572,21 @@ html {
   -webkit-align-items: center;
   align-items: center;
   flex-direction: column; }
+
+.testimonials__img {
+  border-radius: 50%;
+  width: 100px;
+  padding-bottom: 1.5rem; }
+
+.testimonials__header {
+  font-size: 20px;
+  font-weight: 300;
+  width: 80%;
+  color: var(--paragraph);
+  padding-bottom: 1.5rem; }
+
+.testimonials__text {
+  color: var(--pink-lite); }
 
 .pricing__container {
   display: grid;
