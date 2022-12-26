@@ -550,10 +550,11 @@ html {
   width: 100%;
   height: 100%; }
 
-.swiper-button-next,
-.swiper-button-prev {
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 18px;
   color: var(--paragraph);
-  font-size: 10px; }
+  font-weight: 500; }
 
 .swiper-slide {
   text-align: center;
@@ -587,6 +588,14 @@ html {
 
 .testimonials__text {
   color: var(--pink-lite); }
+
+@media screen and (max-width: 875px) {
+  .testimonials__header {
+    font-size: 15px; } }
+
+@media screen and (max-width: 875px) {
+  .testimonials__header {
+    font-size: 11px; } }
 
 .pricing__container {
   display: grid;
