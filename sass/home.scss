@@ -29,6 +29,10 @@ body {
     text-align: center;
 }
 
+.text-white {
+    color: #FFF !important;
+}
+
 .section-heading {
     font-size: 33px;
     font-weight: 500;
@@ -64,6 +68,7 @@ body {
 
 .heading-3 {
     font-size: 20px;
+    padding-bottom: 1rem;
     font-weight: 500;
     color: var(--section-heading);
     // text-align: left;
@@ -72,7 +77,7 @@ body {
 
 .paragraph-1 {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--paragraph);
     text-align: left;
 }
@@ -109,16 +114,23 @@ body {
     font-size: 15px;
 }
 
-.bt-light {
+.btn-light {
     border-radius: 3px;
     background: #FFF;
-    // box-shadow: 0px 9px 32px 0px rgba(0 0 0 / 26%);
-    font-size: 14px;
+    box-shadow: 0px 9px 32px 0px rgba($color: #000000, $alpha: .2);
+    font-size: 16px;
     font-weight: 500;
     color: #633991;
     margin: 0.5rem;
     padding: 0.7rem 1.6rem;
     line-height: 1.8;
+    text-transform: uppercase;
+
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
 }
 
 

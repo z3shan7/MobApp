@@ -19,6 +19,9 @@ body {
 .text-center {
   text-align: center; }
 
+.text-white {
+  color: #FFF !important; }
+
 .section-heading {
   font-size: 33px;
   font-weight: 500;
@@ -49,13 +52,14 @@ body {
 
 .heading-3 {
   font-size: 20px;
+  padding-bottom: 1rem;
   font-weight: 500;
   color: var(--section-heading);
   font-family: inherit; }
 
 .paragraph-1 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--paragraph);
   text-align: left; }
 
@@ -86,15 +90,21 @@ body {
   padding: 0.8rem 1rem;
   font-size: 15px; }
 
-.bt-light {
+.btn-light {
   border-radius: 3px;
   background: #FFF;
-  font-size: 14px;
+  box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
   font-weight: 500;
   color: #633991;
   margin: 0.5rem;
   padding: 0.7rem 1.6rem;
-  line-height: 1.8; }
+  line-height: 1.8;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px; }
 
 @media screen and (max-width: 1200px) {
   .section-center {
@@ -532,14 +542,15 @@ html {
       box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.1); } }
 
 .pricing__container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px; }
 
 .pricing__card {
   background-color: #fff;
-  border: 1px solid #f1eef1; }
+  border: 1px solid #f1eef1;
+  padding: 3rem 1.5rem;
+  text-align: center; }
 
 .pricing__header {
   padding-bottom: 1.5rem; }
@@ -551,3 +562,85 @@ html {
 
 .pricing__span {
   font-size: 25px; }
+
+.pricing__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 1.5rem; }
+
+.pricing__list li {
+  font-weight: 400; }
+
+.pricing__btn {
+  width: 100%;
+  border: 0;
+  padding: 0.8rem 1rem;
+  border-radius: 3px;
+  background-image: linear-gradient(122deg, #e54595 0%, #fd378e 100%);
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.2); }
+
+.pricing__active {
+  border-top-width: 3px;
+  border-color: #ce75b4 #faf6fb #FFF;
+  box-shadow: 0px 12px 59px 0px rgba(0, 0, 0, 0.2);
+  color: #633991; }
+
+@media screen and (max-width: 850px) {
+  .pricing__container {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 550px) {
+  .pricing__container {
+    grid-template-columns: 1fr; } }
+
+.faq__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px; }
+
+@media screen and (max-width: 550px) {
+  .faq__container {
+    grid-template-columns: 1fr; } }
+
+.download-app {
+  background-image: linear-gradient(135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%); }
+  .download-app__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; }
+  .download-app__img {
+    padding-bottom: 4px; }
+  .download-app__text {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffb8f6;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.3rem 0; }
+  .download-app__text-secondry {
+    font-size: 13px;
+    padding-top: 1.4rem;
+    font-style: italic;
+    color: var(--pink-lite); }
+
+@media screen and (max-width: 825px) {
+  .download-app__text {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffb8f6;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.3rem 0; }
+  .download-app__btns {
+    text-align: center; } }
