@@ -139,7 +139,8 @@ body {
 *::after,
 *::before {
   box-sizing: border-box;
-  border: 0 solid transparent; }
+  border: 0 solid transparent;
+  scroll-behavior: smooth; }
 
 body,
 h1,

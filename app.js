@@ -40,3 +40,39 @@ container.addEventListener('click', (e) => {
 
     }
 })
+
+// scrollspy
+
+
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.navbar__links');
+
+
+console.log(sections)
+
+
+
+
+// window.onscroll = () => {
+
+function scrollSpy() {
+
+
+    sections.forEach((sec) => {
+
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id')
+
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('navbar__active');
+                document.querySelector('nav a[href*=' + id + ']').classList.add('navbar__active')
+
+            })
+        }
+    })
+}
+// }
+window.addEventListener('scroll', scrollSpy)

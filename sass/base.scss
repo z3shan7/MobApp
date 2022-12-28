@@ -3,6 +3,7 @@
 *::before {
     box-sizing: border-box;
     border: 0 solid transparent;
+    scroll-behavior: smooth;
 }
 
 body,
@@ -81,6 +82,7 @@ select {
 // prevent iOS font size change
 html {
     -webkit-text-size-adjust: 100%;
+
     // font-size: 62.5% // 16px;
 }
 
