@@ -48,7 +48,7 @@ const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.navbar__links');
 
 
-console.log(sections)
+
 
 
 
