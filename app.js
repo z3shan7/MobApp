@@ -1,10 +1,29 @@
+// navtoggle
+
+const navToggle = document.querySelector(".navbar__nav-toggler");
+const links = document.querySelector(".navbar__list");
 const navbar = document.querySelector('.navbar')
+
+navToggle.addEventListener("click", function () {
+    links.classList.toggle("show-links");
+    if (links.classList.contains('show-links')) {
+        navbar.style.background = 'linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);'
+
+    }
+    // else {
+    //     navbar.style.background = ''
+
+    // }
+
+});
+
 
 // fixed nav
 window.addEventListener('scroll', scrollFunction)
 function scrollFunction() {
     if (window.scrollY > navbar.offsetHeight) {
         navbar.classList.add('fixedNav')
+        // navbar.style.background = 'linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);'
 
     }
     else {
@@ -55,24 +74,25 @@ const navLinks = document.querySelectorAll('.navbar__links');
 
 // window.onscroll = () => {
 
-function scrollSpy() {
+// function scrollSpy() {
 
 
-    sections.forEach((sec) => {
+//     sections.forEach((sec) => {
 
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id')
+//         let top = window.scrollY;
+//         let offset = sec.offsetTop - 150;
+//         let height = sec.offsetHeight;
+//         let id = sec.getAttribute('id')
 
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('navbar__active');
-                document.querySelector('nav a[href*=' + id + ']').classList.add('navbar__active')
+//         if (top >= offset && top < offset + height) {
+//             navLinks.forEach(links => {
+//                 links.classList.remove('navbar__active');
+//                 document.querySelector('nav a[href*=' + id + ']').classList.add('navbar__active')
 
-            })
-        }
-    })
-}
+//             })
+//         }
+//     })
 // }
-window.addEventListener('scroll', scrollSpy)
+// }
+// window.addEventListener('scroll', scrollSpy)
+
