@@ -44,6 +44,7 @@
         height: 16rem;
     }
 
+
     &__text {
         font-size: 25px;
         font-weight: 300;
@@ -70,26 +71,13 @@
     }
 
     &__active {
-        // border-bottom: 2px solid #fff;
+        border-bottom: 2px solid #fff;
         color: #fff;
     }
 
-    &__btn {
-        font-size: 12px;
-        font-weight: 400;
-        text-transform: uppercase;
-        padding: 0.475rem 1.55rem;
-        transition: all 0.3s ease;
-        background: transparent;
-        border: 1px solid #fff;
-        border-radius: 5px;
-    }
 
-    &__btn:hover {
-        cursor: pointer;
-        background-color: #fff;
-        color: rgba(250, 0, 118, 0.8);
-    }
+
+
 
 
 
@@ -119,9 +107,9 @@
 
 @media screen and (min-width:1050px) {
     .navbar {
-        background: transparent;
 
-        // position: relative;
+
+
 
 
         &__content {
@@ -144,51 +132,37 @@
         &__list {
             height: auto;
             display: flex;
+            gap: 10px;
         }
 
-        &__list a {
-            padding: 0;
-            margin: 0 0.5rem;
+        // &__list a {
+        //     // padding: 0;
+        //     // margin: 0 0.5rem;
+        // }
+
+        &__btn {
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding: 0 1rem;
+            transition: all 0.3s ease;
+            background: transparent;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            color: #fff;
+
+
+        }
+
+        &__btn:hover {
+            cursor: pointer;
+            background-color: #fff;
+            color: rgba(250, 0, 118, 0.8);
         }
 
 
 
-        // &__list {
-        //     flex-direction: column;
-        //     position: fixed;
-        //     top: 208px;
-        //     left: 166px;
-        //     transform: translate(-50%, -50%);
-        //     gap: 10px;
-        //     // height: 0;
-        //     display: none;
 
-        // }
-
-        // &__links {
-        //     color: rgba(255, 255, 255, .5);
-        //     padding: .4rem 0;
-        //     display: block;
-        //     width: 100%;
-        // }
-
-        // &__links:hover {
-        //     background-color: skyblue;
-        // }
-
-
-
-
-
-
-
-
-        // &__nav-toggler {
-        //     display: block;
-        //     font-size: 28px;
-        //     border: 1px solid rgba(255, 255, 255, .5);
-        //     padding: 0 .8rem;
-        // }
 
 
     }
