@@ -286,7 +286,7 @@ html {
   background: linear-gradient(135deg, #4a0d8f 0%, #fa2a8f 100%);
   border: 0;
   transition: all 400ms ease;
-  padding: .7rem 0;
+  padding: .2rem 0;
   z-index: 1000;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
 
@@ -295,7 +295,7 @@ html {
 
 @media screen and (min-width: 1050px) {
   .navbar__content {
-    width: 1170px;
+    width: 1100px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -308,7 +308,9 @@ html {
   .navbar__list {
     height: auto;
     display: flex;
-    gap: 10px; }
+    gap: 30px; }
+  .navbar__list a {
+    padding: 0; }
   .navbar__btn {
     font-size: 12px;
     font-weight: 400;
@@ -746,6 +748,27 @@ html {
 
 .fa-solid {
   color: var(--paragraph); }
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #4a0d8f 0%, #fa2a8f 100%);
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  z-index: 100; }
+
+.fa-arrow-up {
+  color: #fff !important; }
+
+.show-link {
+  visibility: visible; }
 
 @media screen and (max-width: 625px) {
   .footer__content {

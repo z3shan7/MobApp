@@ -6,10 +6,10 @@ const navbar = document.querySelector('.navbar')
 
 navToggle.addEventListener("click", function () {
     links.classList.toggle("show-links");
-    if (links.classList.contains('show-links')) {
-        navbar.style.background = 'linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);'
+    // if (links.classList.contains('show-links')) {
+    //     navbar.style.background = 'linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);'
 
-    }
+    // }
     // else {
     //     navbar.style.background = ''
 
@@ -17,10 +17,12 @@ navToggle.addEventListener("click", function () {
 
 });
 
+const topLink = document.querySelector('.top-link')
 
 // fixed nav
 window.addEventListener('scroll', scrollFunction)
 function scrollFunction() {
+    const scrollHeight = window.pageYOffset;
     if (window.scrollY > navbar.offsetHeight) {
         navbar.classList.add('fixedNav')
         // navbar.style.background = 'linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);'
@@ -28,6 +30,14 @@ function scrollFunction() {
     }
     else {
         navbar.classList.remove('fixedNav')
+    }
+    // setup back to top link
+
+    if (scrollHeight > 500) {
+        topLink.classList.add("show-link");
+    }
+    else {
+        topLink.classList.remove("show-link");
     }
     // if (document.body.scrollTop > 20) {
 }

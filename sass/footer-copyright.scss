@@ -53,6 +53,33 @@
     // padding-right: 10px;
 }
 
+
+
+.top-link {
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    z-index: 100;
+}
+
+.fa-arrow-up {
+    color: #fff !important;
+}
+
+.show-link {
+    visibility: visible;
+    // z-index: 100;
+}
+
 @media screen and (max-width:625px) {
     .footer {
 
