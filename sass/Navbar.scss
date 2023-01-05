@@ -1,8 +1,6 @@
 .navbar {
     padding: 1.2rem;
 
-
-
     &__content {
         width: 80%;
         margin: auto;
@@ -26,7 +24,6 @@
         font-size: 1rem;
         text-transform: capitalize;
         display: block;
-        padding: 0.5rem 1rem;
         transition: var(--transition);
     }
 
@@ -41,7 +38,7 @@
     }
 
     .show-links {
-        height: 16rem;
+        height: 15rem;
     }
 
 
@@ -54,8 +51,6 @@
         font-weight: 500;
     }
 
-
-
     &__links {
         font-size: 14px;
         text-transform: uppercase;
@@ -67,21 +62,12 @@
     &__links:hover {
         color: rgba(255, 255, 255, .8);
 
-
     }
 
-    &__active {
-        border-bottom: 2px solid #fff;
-        color: #fff;
-    }
+}
 
-
-
-
-
-
-
-
+&__list.show-links .navbar {
+    background-color: #fff;
 }
 
 .fixedNav.navbar {
@@ -92,7 +78,7 @@
     background: linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
     border: 0;
     transition: all 400ms ease;
-    padding: .2rem 0;
+    padding: .7rem 0;
     z-index: 1000;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 
@@ -118,7 +104,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 1rem;
+            padding: .4rem .7rem;
+
         }
 
         &__logo-box {
@@ -158,6 +145,11 @@
             cursor: pointer;
             background-color: #fff;
             color: rgba(250, 0, 118, 0.8);
+        }
+
+        &__active {
+            border-bottom: 2px solid #fff;
+            color: #fff;
         }
 
 

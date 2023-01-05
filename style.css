@@ -252,7 +252,6 @@ html {
     font-size: 1rem;
     text-transform: capitalize;
     display: block;
-    padding: 0.5rem 1rem;
     transition: var(--transition); }
   .navbar__nav-toggler:hover {
     transform: rotate(90deg); }
@@ -261,7 +260,7 @@ html {
     overflow: hidden;
     transition: var(--transition); }
   .navbar .show-links {
-    height: 16rem; }
+    height: 15rem; }
   .navbar__text {
     font-size: 25px;
     font-weight: 300; }
@@ -274,9 +273,6 @@ html {
     padding: .4rem 0; }
   .navbar__links:hover {
     color: rgba(255, 255, 255, 0.8); }
-  .navbar__active {
-    border-bottom: 2px solid #fff;
-    color: #fff; }
 
 .fixedNav.navbar {
   position: fixed;
@@ -286,7 +282,7 @@ html {
   background: linear-gradient(135deg, #4a0d8f 0%, #fa2a8f 100%);
   border: 0;
   transition: all 400ms ease;
-  padding: .2rem 0;
+  padding: .7rem 0;
   z-index: 1000;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
 
@@ -324,7 +320,10 @@ html {
   .navbar__btn:hover {
     cursor: pointer;
     background-color: #fff;
-    color: rgba(250, 0, 118, 0.8); } }
+    color: rgba(250, 0, 118, 0.8); }
+  .navbar__active {
+    border-bottom: 2px solid #fff;
+    color: #fff; } }
 
 .hero-section {
   background-image: linear-gradient(135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
